@@ -3,19 +3,19 @@
         <title>Java Script 01</title>
         <script>
             alert ("Olá Galera!")
-            function trocarFrase(){
-                var fraseAtual = document.getElementById("frase")
-                fraseAtual.innerHTML= "Funcionou, a frase muudou!";
-                fraseAtual.style.color= "red";
-                fraseAtual.style.fontSize = "25px";
-                fraseAtual.style.backgroundColor= "yellow";
-                  //altera o fundo da página
-                  document.body.style.backgroundColor = "blue";
-                fraseAtual.innerHTML = "<img src=\'img/a.jpeg\' />"
+
+            function trocarClasse(){
+                var fraseAtual = document.getElementById("frase");
+                fraseAtual.className = "h1_2";
             }
         </script>
+        <script src="js/myscript.js"></script>
+        <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        <h1 id="frase" ondblclick="trocarFrase()">Olá Mundo!</h1>
+        <h1 
+        id="frase" 
+        class="h1_1"
+        ondblclick="trocarFrase()">Olá Mundo!</h1>
     </body>
 </html>
