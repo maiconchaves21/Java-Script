@@ -1,17 +1,28 @@
 <html>
     <head>
         <title>Calculadora</title>
-        <script src="js/myscript.js" type="">
+        <script src="js/myscript.js" type="text/javascript">
+            <link rel="stylesheet" href="css/style.css">
             
             function trocarTexto(umTexto){
                 var elemento = document.getElementById("frase")
                 var elementoNovo = document.getElementById("novaFrase").value
                 elemento.innerHTML = elementoNovo
             }
-            
         </script>
-            <script src="js/myscript.js" type="text/javascript"></script>
-            <link rel="stylesheet" href="css/style.css">
+        
+        function somar(){
+            let campoN1 = document.getElementById(n1)
+            let valorN1 = parseInt(campN1.value)
+
+            let campoN2 = document.getElementById(n1)
+            let valorN2 = parseInt(campoN2.value)
+
+            let resulktadoDaSoma = valorN1 + valorN2
+
+            let campoResultado = document.getElementById("resultado")
+            campoResultado.value = resulktadoDaSoma
+        }
         </head>
     <body>
         <h1>Página da minha Calculadora</h1>
