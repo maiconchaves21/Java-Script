@@ -1,16 +1,15 @@
 <html>
-
-<head>
-    <title>Calculadora</title>
-    <script src="js/myscript.js" type="text/javascript">
-        <link href="css/style.css">
+    <head>
+        <title>Calculadora</title>
+            <script src="js/myscript.js" type="text/javascript">
+            <link href="css/style.css">
 
             <script>
                 function trocarTexto(umTexto) {
                 var elemento = document.getElementById("frase")
                 var elementoNovo = document.getElementById("novaFrase").value
                 elemento.innerHTML = elementoNovo
-            }
+                }
 
     </script>
 
@@ -26,18 +25,17 @@
 
                     let campoResultado = document.getElementById("resultado")
                     campoResultado.value = resulktadoDaSoma
-        }
+                    }
     </script>
 </head>
 
 <body>
-    <h1>Página da minha Calculadora</h1>
-    <input type="number" placeholder="123" id="n1">
-    <input type="number" placeholder="123" id="n2">
-    =
-    <input type="number" readonly id="r"><br>
-    <button onclick="somar();">+</button>
-    <button onclick="subtrair();">-</button>
-</body>
-
+        <h1>Página da minha Calculadora</h1>
+            <input type="number" placeholder="123" id="n1">
+            <input type="number" placeholder="123" id="n2">
+            =
+            <input type="number" readonly id="r"><br>
+            <button onclick="somar();">+</button>
+            <button onclick="subtrair();">-</button>
+    </body>
 </html>
