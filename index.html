@@ -9,13 +9,16 @@
                 fraseAtual.className = "h1_2";
             }
         </script>
-        <script src="js/myscript.js"></script>
+        <script src="js/myscript.js" type="text/javascript"></script>
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        <h1 
-        id="frase" 
-        class="h1_1"
-        ondblclick="trocarFrase()">Olá Mundo!</h1>
+        <h1 ondblclick="trocarFrase()">Olá Mundo!</h1>
+        <input id="novaFrase" type="text"><br>
+        <input id="botão" type="button"
+                value="trocarFrase"
+                onclick="alert('olá')"><br>
+
+
     </body>
 </html>
