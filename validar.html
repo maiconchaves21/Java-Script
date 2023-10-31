@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <script>
+            function trabalhandoNome() {
+                /*explicando variáveis */
+            var nome = prompt("Diga um nome", "Maicon")
+            var sobrenome = prompt("Diga um sobrenome","Chaves")
+            var nomeCompleto = nome + " " + sobrenome
+            var tamanhoDoNome = nomeCompleto.length
+            alert ("[" + nomeCompleto + "]" + 
+            "\n" + " com tamanho = " + tamanhoDoNome)
+
+            var retorno = confirm("Seu nome é: " + nomeCompleto + "?") 
+                if(retorno) {
+                    console.log("Beleza!")
+                    document.write("Confirmado o nome")
+                }else{
+                    console.log("Ixi,deu ruim!")
+                    document.write("Errou o nome")
+                }
+            }
+            
+            function trabalhandoNúmeros() {
+                var num1 = prompt("Diga um número")
+                var num2 = 5
+                var total = num1 + num2
+                alert("total = " + total)
+            }
+        
+            trabalhandoNúmeros()
+        </script>
+    </head>
+    <body>
+        <h1>Validação</h1>
+    </body>
+</html>
