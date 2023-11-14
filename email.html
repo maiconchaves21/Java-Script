@@ -19,11 +19,22 @@
         Whatsapp
     </a>
     <form id="idForm" action="http://jkorpela.fi/cgi-bin/echo.cgi" method="post">
-        <input placeholder="nada@nada.com"
-        type="email"
-        name="email"
-        id="idEmail" required>
-        <input type="submit" value="Enviar">
+        Email:<input 
+            placeholder="nada@nada.com"
+            type="email"
+            name="email"
+            id="idEmail" required>
+        <input type="submit" value="Enviar"><br>
+
+        Nome:<input type="text"
+        minlength="5" maxlength="12"
+        pattern="[A-Z]"
+        name="nome" id="IdNome" required><br>
+
+        <textarea rows="7" cols="33" name="corpo"
+        placeholder="O texto do seu email." required>
+        </textarea><br>
+        <input  type="submit" value="Enviar" />
     </form>
 </body>
 
