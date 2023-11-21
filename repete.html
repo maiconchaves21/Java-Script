@@ -42,17 +42,34 @@
                 }
             }
 
-
-
                     function contar3(){
-                    var n = 10
-                while(n >-1)
-                {
-                    document.write(n);
-                    document.write('<br>');
-                    n = n - 1
+                    var soma = 0 
+                    var n = 0
+                    while (n < 21) {
+                        if((soma + n) > 101) {
+                            break //para loooping
+                        }else{
+                            soma = soma + n
+                    }
+                        n = n + 1
                 }
+                    document.write(n);
+            }   
+
+            function contar4(){
+                   var numeros = [9,21,7,15];
+                                //0    1       2
+                   var cars = ["BMW","Volvo","Saab",
+                    //3     5      5         6
+                   "Ford","Fiat","Audi","abobrinha"]
+
+                   for (let index = 0; index < array.length; index++) {
+                    const element = array[index];
+                    
+                   }
             }
+              
+            
 
         </script>
     </head>
