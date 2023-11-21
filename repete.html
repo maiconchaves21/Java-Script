@@ -68,7 +68,32 @@
                     
                    }
             }
-              
+
+            function contar4() {
+                //          0       1       2       3       4         5
+                var a = ["José", "Maria","Padre","Joana","Bento","Francisco"]
+
+                for (let index = 0; index < array.length; index++) {
+                    const element = array[index];
+
+                 if(element == "Padre"){
+                    document.write("casinha:" + index + "tem" + element + "<br>")
+                        break
+                    }     
+                } 
+
+                var quem = prompt("Diga um nome")
+                var ondeEsta = a.indexOf(quem) // -1
+                if(ondeEsta != -1){
+                    document.write("casinha" + ondeEsta + "tem" + quem + "<br>")
+                    a.splice(quem)
+                }else{
+                
+                var ondeEstáPadre = a.indexOf("Padre")
+                document.write("casinha:" + ondeEstáPadre + "tem padre <br>")
+
+            }
+        }   
             
 
         </script>
@@ -79,6 +104,7 @@
         <input type="button" value="Regressiva" onclick="contar1();">
         <input type="button" value="Tabuada 5" onclick="contar2();">
         <input type="button" value="20" onclick="contar3();">
+        <input type="button" value="Charada" onclick="contar4();">
     </body>
 
 </html>
